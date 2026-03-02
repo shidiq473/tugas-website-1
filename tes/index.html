@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document tes</title>
+</head>
+
+<body>
+    <img id="myImage" src="mie-instan.jpg" 
+    alt="mie-instan" width="300px" /><br />
+    <button id="btnchange">Ubah Gambar</button>
+    <button id="btnchange2">Ubah Gambar2</button>
+    <script>
+        const tombol = document.querySelector("#btnchange");
+        let gambar = document.querySelector("#myImage");
+        tombol.addEventListener('click', function (){
+            gambar.setAttribute("src", "es-teh.jpg");
+        })
+        const tombol2 = document.querySelector("#btnchange2");
+        tombol2.addEventListener('click', function (){
+            gambar.setAttribute("src", "mie-instan.jpg");
+        })
+
+    </script>
+    
+</body>
+</html>
